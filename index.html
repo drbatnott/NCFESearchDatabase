@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Database Enquiry Page</title>
+</head>
+<body>
+    <h3>This Page Allows Users to Look Up Our Penguins Database For a Particular Penguin.</h3>
+    <!--The post method will send all "named" input elements in an array to the action page
+        The array that is sent is called $_POST -->
+    <form action="action.php" method="post">
+        <label>Enter Penguin Common Name To Search For: </label>
+        <input type="text" name="commonName" placeholder="-Enter penguin name here-" /><br />
+        <label>Enter Penguin Scientific Name To Search For: </label>
+        <input type="text" name="scientificName" placeholder="-Enter penguin name here-" /><br />
+        <input type="submit" value="Check" name="Check" />
+    </form>
+</body>
+</html>
